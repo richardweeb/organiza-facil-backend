@@ -1,0 +1,13 @@
+services:
+  organizafacil:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - SESSION_SECRET=change-me
+      - BOT_TOKEN=${BOT_TOKEN}
+      - BOT_API_TOKEN=${BOT_API_TOKEN}
+      - API_BASE_URL=http://localhost:3000
+    volumes:
+      - ./data:/app/data

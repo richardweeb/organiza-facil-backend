@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.*
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+*.log
+cookies.txt
+body.json
